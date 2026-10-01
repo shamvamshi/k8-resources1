@@ -6,7 +6,7 @@ metadata:
     project: roboshop
     purpose: configmap-demo
 spec:
-data:
+  data:
   - name: sham
     value: "son of krishna"
   - name: sham vamshi
