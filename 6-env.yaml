@@ -9,8 +9,8 @@ spec:
   containers:
   - name: nginx
     image: nginx
-data:
-  - name: sham
-    value: "jawa 4227"
-  - name: sham
-    value: "punch 0174" 
+    env:
+    - name: sham
+      value: "jawa 4227"
+    - name: sham
+      value: "punch 0174" 
