@@ -1,0 +1,13 @@
+apiversion: v1
+kind: Configmap
+metadata:
+  name: Configmap-demo
+  labels:
+    project: roboshop
+    environment: dev
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+  - name: almalinux
+    image: almalinux-9
