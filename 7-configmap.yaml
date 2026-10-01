@@ -19,10 +19,11 @@ metadata:
   labels:
     project: roboshop
     environment: dev
+  Envfrom:
+      ConfigMapRef:
+      - name: configmap-demo
 spec:
   containers:
   - name: nginx
     image: nginx
-    Envfrom:
-      ConfigMapRef:
-      - name: configmap-demo
+    
