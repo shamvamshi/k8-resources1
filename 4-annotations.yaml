@@ -5,9 +5,9 @@ metadata:
   labels:
     project: roboshop
     purpose: annotations-demo
-annotations:
-  description: "this is created for annotations"
-  jenkins: "http://www.roboshop/cart/items"
+  annotations:
+    description: "this is created for annotations"
+    jenkins: "http://www.roboshop/cart/items"
 spec:
   containers:
   - name: nginx
