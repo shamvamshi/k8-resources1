@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: env-demo
+  labels:
+    project: roboshop
+    purpose: env-vars
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+data:
+  - name: sham
+    value: "jawa 4227"
+  - name: sham
+    value: "punch 0174" 
