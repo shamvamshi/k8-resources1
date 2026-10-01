@@ -5,6 +5,7 @@ metadata:
   labels:
     project: roboshop
     purpose: configmap-demo
+spec:
 data:
   - name: sham
     value: "son of krishna"
