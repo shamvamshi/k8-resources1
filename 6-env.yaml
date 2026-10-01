@@ -12,5 +12,5 @@ spec:
     env:
     - name: sham
       value: "jawa 4227"
-    - name: sham
+    - name: sham1
       value: "punch 0174" 
