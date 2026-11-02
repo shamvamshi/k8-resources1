@@ -10,19 +10,4 @@ data:
   value: "son of krishna"
   name: sham vamshi
   value: "son of swaroopa"
----
-apiVersion: v1
-kind: Pod
-metadata:
-  name: pod-demo
-  labels:
-    project: roboshop
-    environment: dev
-  Envfrom:
-    ConfigMapRef:
-    - name: configmap-demo
-spec:
-  containers:
-  - name: nginx
-    image: nginx
     
