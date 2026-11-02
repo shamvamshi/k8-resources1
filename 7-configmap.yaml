@@ -5,12 +5,11 @@ metadata:
   labels:
     project: roboshop
     purpose: configmap-demo
-spec:
-  data:
-  - name: sham
-    value: "son of krishna"
-  - name: sham vamshi
-    value: "son of swaroopa"
+data:
+  name: sham
+  value: "son of krishna"
+  name: sham vamshi
+  value: "son of swaroopa"
 ---
 apiVersion: v1
 kind: Pod
@@ -20,8 +19,8 @@ metadata:
     project: roboshop
     environment: dev
   Envfrom:
-      ConfigMapRef:
-      - name: configmap-demo
+    ConfigMapRef:
+    - name: configmap-demo
 spec:
   containers:
   - name: nginx
