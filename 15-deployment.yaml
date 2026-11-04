@@ -20,5 +20,3 @@ spec:
       containers:
       - name: nginx
         image: nginx:stable-pearl
-        ports:
-        - containerPort: 80
