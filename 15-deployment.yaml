@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment-demo
-  labels:
+  labels: # this is deployment labels
     project: roboshop
     environment: dev
 spec:
@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx
+        image: nginx:stable-pearl
         ports:
         - containerPort: 80
