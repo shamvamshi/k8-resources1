@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: internal-service
+spec:
+  type: ClusterIP      # Can be omitted as it is the default
+  selector:
+    purpose: service demo
+    project: roboshop
+    environment: dev        # Matches the labels on your target Pods
+  ports:
+    - protocol: TCP
+      port: 80      # This is service port
+      targetPort: 80  # This is container port, nginx default port number is 80.
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-demo
+  labels:
+    purpose: service demo
+    project: roboshop
+    environment: dev
+spec:
+  containers:
+  - name: nginx
+    image: nginx
